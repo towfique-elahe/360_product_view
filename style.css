@@ -38,6 +38,26 @@ header {
   box-shadow: #654d3636 0 0 5rem;
 }
 
+.button {
+  text-decoration: none;
+  background-color: #654d36be;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: #654d3636 0 0 5rem;
+  display: block;
+  width: 12rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  transition: ease 0.3s;
+}
+
+.button:hover {
+  background-color: #654d36;
+}
+
 footer {
   color: #654d36;
   text-align: center;
