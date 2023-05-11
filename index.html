@@ -1,0 +1,47 @@
+<!-- owned by towfique elahe -->
+<!-- published on github profile - https://github.com/towfique-elahe -->
+<!-- Mail - towfiqueelahe6@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Deg Product View by Towfique Elahe</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <h1>360 Product View</h1>
+        </header>
+
+        <!-- product viewer -->
+        <div id="product_viewer"></div>
+
+        <!-- footer -->
+        <footer>
+            &copy; Towfique Elahe
+        </footer>
+    </div>
+
+    <script src="/product_viewer.js"></script>
+    <script>
+        var productViewer = new ProductViewer({
+            element: document.getElementById('product_viewer'),
+            imagePath: './product',
+            filePrefix: 'img',
+            fileExtension: '.jpg'
+        });
+
+        ProductViewer.once('loaded', function () {
+            ProductViewer.animate360();
+        })
+    </script>
+</body>
+
+</html>
